@@ -12,35 +12,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Contactenos</h2>
+    <h2>Servicio al Cliente de Gameforge</h2>
 
-    <p> Gracias por tu consulta. Nos pondremos en contacto contigo a la brevedad para proporcionarte una respuesta. 😊</p>
+    <p> Lamentamos su inconveniente. Nos pondremos en contacto con usted a la brevedad para proporcionarte una solucion lo antes posible. 😊</p>
 
     <form action="https://formsubmit.co/crowbustos@gmail.com" method="POST" />
         <label for="Nombre">Nombre</label>
-        <input type="text" name="Nombre" id="Nombre" maxlength="70" placeholder="Ej: Lazaro"/>
+        <input type="text" name="Nombre" id="Nombre" maxlength="70" placeholder="Ej: David"/>
 
         <label for="Apellido">Apellido</label>  
-        <input type="text" name="Apellido" id="Apellido" maxlength="70" placeholder="Ej: Billani" />
+        <input type="text" name="Apellido" id="Apellido" maxlength="70" placeholder="Ej: Marchezano" />
 
         <label for="email">Gmail</label>
         <input type="email" name="email" id="email" maxlength="50" placeholder="tuemail@correo.com" />
-
-        <h3>Selecciona turno</h3>
         
+        <label for="fecha">Inicio del Problema</label>  
+        <input type="date" name="fecha" id="fecha de nacimiento" max="2025-12-12" />
 
-        <label for="fecha">Fecha de nacimiento</label>  
-        <input type="date" name="fecha" id="fecha de nacimiento" max="2025-12" />
 
-        <label for="turnoM">Mañana</label> 
-        <input type="radio" name="turno" id="turnoM" value="mañana" /> 
+        <label for="textarea">Describe tu Problema :</label>
+        <textarea name="Descripcion del problema" id="Descripcion del problema" cols="30" rows="10" maxlength="500" placeholder="Max 500 Caracteres."></textarea>
         
-        <label for="turnoT">Tarde</label> 
-        <input type="radio" name="turno" id="turnoT" value="tarde" />
-
-        <label for="turnoN">Noche</label> 
-        <input type="radio" name="turno" id="turnoN" value="nocge" />
         
+        <h3>Selecciona Prioridad</h3>
+
+    
+        <label for="Urgente">Ungente</label> 
+        <input type="radio" name="urgencia" id="urgencia" value="mañana" /> 
+        
+        <label for="Puedo esperar">Puedo esperar</label> 
+        <input type="radio" name="urgencia" id="urgencia" value="tarde" />
+
+        
+    <h3>Muestre una Imagen con el Problema (Opcional)</h3>
+        <input type="file" name="archivo" id="archivo">
+        <input type="submit" value="Subir archivo">
 
     <div class="notificacion">
 
@@ -49,7 +55,7 @@
         
     </div>
 
-        
+    
 
         <textarea name="Comentarios" id="Comentarios" cols="30" rows="10" maxlength="500" placeholder="Dejanos tus comentarios y sugerencias..."></textarea>
 
