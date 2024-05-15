@@ -1,15 +1,22 @@
+/*body{
+    background-image: url(image/1000_F_133269695_sUCKMwLLbel9c9nrV1JH1UUZBkfd1eWj.jpg);
+    
+}*/
+
 body{
-    background-image: url(image/5375759.jpg);
+    background-color: oldlace;
 }
+
+
 form{
     width: 60%;
     margin: 30px auto;
-    color: rgb(238, 255, 0);
+    color: rgb(0, 0, 0);
 
 }
 
 h1{
-    text-shadow: 5px 5px 5px rgb(23, 255, 62);
+    text-shadow: 5px 5px 5px rgb(214, 252, 0);
     text-align: center;
     font-weight: 700;
     color: rgb(0, 5, 70);
@@ -17,15 +24,15 @@ h1{
 p{
     font-weight: 600;
     text-align: center;
-    color: rgb(255, 0, 0);
+    color: rgb(151, 0, 0);
 
 }
 input{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 ::placeholder{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 label, input {
