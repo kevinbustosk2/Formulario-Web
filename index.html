@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactenos</title>
+    <title>Insta Pet</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
@@ -12,54 +12,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Servicio al Cliente de Gameforge</h2>
+    <h1>Bienvenidos Usuarios, a nuestro InstaPet</h1>
 
-    <p> Lamentamos su inconveniente. Nos pondremos en contacto con usted a la brevedad para proporcionarte una solucion lo antes posible. 😊</p>
+    <p> Esta es una plataforma que permite registrar datos de su mascota y compartir sus mejores momentos. </p> 
+    <p> Por Favor complete el siguiente Formulario de registro 😊</p>
 
     <form action="https://formsubmit.co/crowbustos@gmail.com" method="POST" />
         <label for="Nombre">Nombre</label>
-        <input type="text" name="Nombre" id="Nombre" maxlength="70" placeholder="Ej: David"/>
+        <input type="text" name="Nombre" id="Nombre" maxlength="70" required placeholder="Ej: Laika"/>
 
-        <label for="Apellido">Apellido</label>  
-        <input type="text" name="Apellido" id="Apellido" maxlength="70" placeholder="Ej: Marchezano" />
+        <label for="Edad">edad de la mascota</label>  
+        <input type="text" name="Edad de la mascota" id="Edad" maxlength="70" required placeholder="Ej: 1/2/3/4" />
 
         <label for="email">Gmail</label>
-        <input type="email" name="email" id="email" maxlength="50" placeholder="tuemail@correo.com" />
+        <input type="email" name="email" id="email" maxlength="50" required placeholder="tuemail@correo.com" />
         
-        <label for="fecha">Inicio del Problema</label>  
-        <input type="date" name="fecha" id="fecha de nacimiento" max="2025-12-12" />
+        <label for="pwd">Contraseña:</label>
+        <input type="password" id="pwd" name="pwd" required>
+
+        <label for="color">Color de mascota:</label>
+        <input type="color" id="color" name="color" required>
+
+        <label for="tipo-mascota">Tipo de mascota:</label>
+        <select id="tipo-mascota" name="tipo-mascota">
+           <option value="miau">Gato</option>
+           <option value="guau">Perro</option>
+           <option value="uiui">Cobayo</option>
+           <option value="otra">Otra</option>
+        </select>
 
 
-        <label for="textarea">Describe tu Problema :</label>
-        <textarea name="Descripcion del problema" id="Descripcion del problema" cols="30" rows="10" maxlength="500" placeholder="Max 500 Caracteres."></textarea>
-        
-        
-        <h3>Selecciona Prioridad</h3>
-
-    
-        <label for="Urgente">Ungente</label> 
-        <input type="radio" name="urgencia" id="urgencia" value="Urgente" /> 
-        
-        <label for="Puedo esperar">Puedo esperar</label> 
-        <input type="radio" name="urgencia" id="urgencia" value="Sin Urgencia" />
-    
-    
-
-        
-    <h3>Muestre una Imagen con el Problema (Opcional)</h3>
-        <input type="file" name="archivo" id="archivo">
-        <input type="submit" value="Subir archivo">
-
-    <div class="notificacion">
-
-        <label for="notificaciones">Recibir Informacion y Notificaciones</label>
-        <input type="checkbox" name="notificaciones" id="notificaciones" checked />
-        
-    </div>
-
-    
-
-        <textarea name="Comentarios" id="Comentarios" cols="30" rows="10" maxlength="500" placeholder="Dejanos tus comentarios y sugerencias..."></textarea>
 
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpiar">
