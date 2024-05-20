@@ -1,1 +1,4 @@
-Este es un formulario de registro para la paguina InstaPet
+Bienvenido al espacio dedicado a nuestros animales.
+
+Aqui compartimos fotos, historias y consejos para todos los amantes de los animes
+
